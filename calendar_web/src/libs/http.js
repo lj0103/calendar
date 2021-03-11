@@ -2,7 +2,6 @@ import axios from 'axios';
 import qs from 'qs';
 
 import { JUHE_APPKEY } from '@/configs/keys'
-import {get } from 'core-js/core/dict';
 
 function axiosPost(options) {
     axios({
@@ -19,7 +18,7 @@ function axiosPost(options) {
         .then((res) => {
             options.success(res.data)
         })
-        .catch((error) => {
+        .catch((err) => {
             options.error(err)
         })
 }
@@ -29,7 +28,7 @@ function axiosGet(options) {
         .then((res) => {
             options.success(res.data)
         })
-        .catch((error) => {
+        .catch((err) => {
             options.error(err)
         })
 }
