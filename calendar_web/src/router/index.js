@@ -6,7 +6,7 @@ import DayPage from '@/views/day';
 const routes = [{
         path: '/',
         name: 'DayPage',
-        components: DayPage
+        component: DayPage
     }, {
         path: '/month',
         name: 'MonthPage',
