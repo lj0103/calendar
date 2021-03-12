@@ -12,7 +12,7 @@ function axiosPost(options) {
             },
             data: qs.stringify({
                 ...options.data,
-                JUHE_APPKEY
+                key: JUHE_APPKEY
             }),
         })
         .then((res) => {

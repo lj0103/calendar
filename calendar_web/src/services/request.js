@@ -1,10 +1,10 @@
-import { axiosPost } from '@/lib/http';
+import { axiosPost } from '@/libs/http';
 
-function getDayData(data) {
+function getDayData(date) {
     return new Promise((resolve, reject) => {
         axiosPost({
             url: '/api/calendar/day',
-            data: { data },
+            data: { date },
             success(data) {
                 resolve(data)
             },
