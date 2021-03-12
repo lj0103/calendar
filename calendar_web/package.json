@@ -13,7 +13,8 @@
         "qs": "^6.9.6",
         "vue": "^3.0.0",
         "vue-router": "^4.0.0-alpha.6",
-        "vuex": "^4.0.0-alpha.1"
+        "vuex": "^4.0.0-alpha.1",
+        "vux": "^2.9.4"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "~4.5.0",

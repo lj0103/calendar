@@ -11,7 +11,7 @@ module.exports = {
                 ws: true,
                 secure: false,
                 pathRewrite: {
-                    "^api": ""
+                    "^/api": "" //注意^/api一定要有斜杠，否则接口访问会404
                 }
             }
 
