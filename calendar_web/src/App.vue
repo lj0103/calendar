@@ -9,6 +9,7 @@ import MyHeader from "@/components/header";
 
 import { computed } from "vue";
 import { useStore } from "vuex";
+import { useRouter } from "vue-router";
 export default {
   name: "App",
   components: {
@@ -16,7 +17,10 @@ export default {
   },
   setup() {
     const store = useStore(),
-          state = store.state;
+      state = store.state,
+      route = useRouter();
+
+    route.push("/");
 
     return computed(() => state).value;
   },
