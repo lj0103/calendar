@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 import state from './state'
-import mutations from './'
+import mutations from './mutations'
 
 export default createStore({
     //导入的写法

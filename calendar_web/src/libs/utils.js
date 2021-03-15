@@ -4,7 +4,6 @@ function _addZero(value) {
 
 function getIconDate(type) {
     const date = new Date();
-
     switch (type) {
         case 'day':
             return _addZero(date.getDate().toString());
@@ -17,7 +16,6 @@ function getIconDate(type) {
 
 function formatChsDate(date, type) {
     const _arr = date.split('-');
-
     switch (type) {
         case 'day':
             return `${_arr[0]}年${_arr[1]}月${_arr[2]}日`;
@@ -39,7 +37,6 @@ function mapForChsDate(data, key) {
 
 function getNowDate(field) {
     const date = new Date();
-
     let year = date.getFullYear(),
         month = date.getMonth() + 1,
         day = date.getDate();
@@ -58,7 +55,6 @@ function getNowDate(field) {
 
 function formatUserDate(value) {
     const len = value.length;
-
     if (len < 4) {
         return;
     }

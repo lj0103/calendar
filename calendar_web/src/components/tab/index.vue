@@ -1,11 +1,31 @@
 <template>
-  <div class="tab"></div>
+  <div class="tab">
+    <div class="tab-item" v-for="(item, index) of tabData" :key="index">
+      <tab-icon :iconText="item.iconText" :path="item.path">{{
+        item.tabText
+      }}</tab-icon>
+    </div>
+  </div>
 </template>
 
 <script>
-import TabIcon from './icon'
+import TabIcon from "./icon";
+import tabData from "@/data/tab";
+import { reactive } from "vue";
 export default {
   name: "Tab",
+  components: {
+    TabIcon,
+  },
+  setup() {
+    const state = reactive({
+      tabData,
+    });
+
+    return {
+      ...state,
+    };
+  },
 };
 </script>
 
